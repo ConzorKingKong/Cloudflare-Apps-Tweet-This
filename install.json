@@ -1,0 +1,38 @@
+{
+  "resources": {
+    "body": [
+      {
+        "type": "style",
+        "src": "./source/app.css"
+      },
+      {
+        "type": "script",
+        "src": "./source/app.js"
+      }
+    ]
+  },
+  "preview": {
+    "handlers": [
+      {
+        "options": ["_default"],
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "username": {
+        "order": 0,
+        "title": "Twitter handle",
+        "type": "string",
+        "placeholder": "@Cloudflare"
+      },
+      "label": {
+        "order": 1,
+        "title": "Button Label",
+        "type": "string",
+        "default": "Tweet!"
+      }
+    }
+  }
+}
